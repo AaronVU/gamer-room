@@ -7,6 +7,7 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 import { Grid } from "@mui/material";
+import Appbar from './components/Appbar';
 
 function App() {
 
@@ -21,6 +22,10 @@ function App() {
   }
 
   return (
+    <Grid>
+      <Appbar />
+    </Grid>
+    /*
     <Router>
       <nav>
         <Link to="/">Home</Link>
@@ -39,6 +44,7 @@ function App() {
         <Route path='/login' element={<Login setIsAuth={setIsAuth} />} />
       </Routes>
     </Router>
+          */
   );
 }
 
