@@ -7,7 +7,7 @@ import { useState } from "react";
 import { signOut } from "firebase/auth";
 import { auth } from "./firebase-config";
 import { Grid } from "@mui/material";
-import Appbar from './components/Appbar';
+import Layout from './components/Layout';
 
 function App() {
 
@@ -22,9 +22,9 @@ function App() {
   }
 
   return (
-    <Grid>
-      <Appbar />
-    </Grid>
+      <Grid>
+        <Layout />
+      </Grid>
     /*
     <Router>
       <nav>
